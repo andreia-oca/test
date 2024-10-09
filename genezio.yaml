@@ -1,0 +1,9 @@
+name: test
+region: us-east-1
+yamlVersion: 2
+frontend:
+  path: .
+  publish: build
+  scripts:
+    deploy: npm install --legacy-peer-deps
+    build: npm run build
